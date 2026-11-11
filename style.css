@@ -1,0 +1,100 @@
+/* Custom font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* Color scheme: soccer-pitch greens with a gold accent */
+:root {
+    --dark-green: #1b4332;
+    --green: #2d6a4f;
+    --cream: #f4f1ea;
+    --gold: #e9a23b;
+    --text: #222222;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: var(--cream);
+    color: var(--text);
+    line-height: 1.7;
+}
+
+/* Navigation bar */
+nav {
+    background-color: var(--dark-green);
+    padding: 16px 40px;
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: var(--gold);
+}
+
+/* Page layout: centered column with spacing */
+main {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 0 24px;
+}
+
+h1 {
+    font-size: 2.6rem;
+    color: var(--dark-green);
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.6rem;
+    color: var(--green);
+    border-bottom: 3px solid var(--gold);
+    padding-bottom: 4px;
+}
+
+a {
+    color: var(--green);
+}
+
+/* Images */
+.profile-pic {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid var(--gold);
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+.page-img {
+    width: 100%;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+/* Lists */
+ul li {
+    margin-bottom: 8px;
+}
+
+/* Contact box */
+#contact {
+    background-color: white;
+    padding: 10px 24px 20px 24px;
+    border-left: 6px solid var(--green);
+    border-radius: 8px;
+    margin-top: 40px;
+}
+
+/* D3 chart container (used on page 2) */
+#chart {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+}
